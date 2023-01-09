@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/appbarwithbg.dart';
 import 'package:project/simple_appbar.dart';
+import 'package:project/sliverappbar.dart';
 import 'package:project/transparent_appbar.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: TransparentAppbar(),
-      home: AppbarwithBG(),
+      home: SliverAppBarLat(),
+      theme: ThemeData(useMaterial3: true),
     );
   }
 }
